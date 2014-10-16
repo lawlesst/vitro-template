@@ -1,7 +1,7 @@
 
 ##Solr directory
 
-Add overrides for VIVO's Solr here.  
+Add overrides for Vitro's Solr here.  
 
 Your additions should follow the structure from Vitro here:
 https://github.com/vivo-project/Vitro/tree/develop/solr
