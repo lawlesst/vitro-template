@@ -2,24 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4fb6eefe-6741-4ca6-a88c-100ba945c170" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/brown/library/vitro/controller/individual/IndividualController.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vdata/developer.properties" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/productMods/templates/freemarker/body/individual/individual-hidden-class.ftl" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/productMods/config/listViewConfig-default.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/edu/cornell/mannlib/vitro/webapp/search/VitroSearchTermNames.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/edu/cornell/mannlib/vitro/webapp/search/documentBuilding/IndividualToSearchDocument.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/edu/brown/library/vitro/search/controller/PagedSearchController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/edu/brown/library/vitro/controller/individual/IndividualController.java" afterPath="$PROJECT_DIR$/src/edu/brown/library/vitro/controller/individual/IndividualController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vitro/utilities/buildutils/src/edu/cornell/mannlib/vitro/utilities/revisioninfo/ProcessRunner.java" afterPath="$PROJECT_DIR$/Vitro/utilities/buildutils/src/edu/cornell/mannlib/vitro/utilities/revisioninfo/ProcessRunner.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vitro/solr/homeDirectoryTemplate/README.txt" afterPath="$PROJECT_DIR$/Vitro/solr/homeDirectoryTemplate/README.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vitro/webapp/context.xml" afterPath="$PROJECT_DIR$/Vitro/webapp/context.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example.runtime.properties" afterPath="$PROJECT_DIR$/example.runtime.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/rdf/tbox/filegraph/hub-ont.ttl" afterPath="$PROJECT_DIR$/rdf/tbox/filegraph/hub-ont.ttl" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/log4j.properties" afterPath="$PROJECT_DIR$/config/log4j.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vitro/utilities/licenser/property_file_reader.rb" afterPath="$PROJECT_DIR$/Vitro/utilities/licenser/property_file_reader.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vitro/solr/homeDirectoryTemplate/conf/spellings.txt" afterPath="$PROJECT_DIR$/Vitro/solr/homeDirectoryTemplate/conf/spellings.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vitro/solr/homeDirectoryTemplate/conf/stopwords.txt" afterPath="$PROJECT_DIR$/Vitro/solr/homeDirectoryTemplate/conf/stopwords.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vitro/solr/homeDirectoryTemplate/conf/synonyms.txt" afterPath="$PROJECT_DIR$/Vitro/solr/homeDirectoryTemplate/conf/synonyms.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/productMods/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/productMods/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="vitro-template.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,24 +56,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="individual-hidden-class.ftl" pinned="false" current-in-tab="true">
+      <file leaf-file-name="individual-hidden-class.ftl" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/productMods/templates/freemarker/body/individual/individual-hidden-class.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="908">
+            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="108">
               <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IndividualController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PagedSearchController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/edu/brown/library/vitro/search/controller/PagedSearchController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IndividualController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/edu/brown/library/vitro/controller/individual/IndividualController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1656">
-              <caret line="86" column="1" selection-start-line="86" selection-start-column="1" selection-end-line="86" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.46203208" vertical-offset="0" max-vertical-offset="1602">
+              <caret line="24" column="71" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2186#2202#0" expanded="true" />
+                <element signature="e#2126#2142#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -127,26 +129,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="developer.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vdata/developer.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="144">
-              <caret line="0" column="1" selection-start-line="0" selection-start-column="1" selection-end-line="0" selection-end-column="1" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="build.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.392857" vertical-offset="1055" max-vertical-offset="2718">
-              <caret line="67" column="26" selection-start-line="67" selection-start-column="23" selection-end-line="67" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
     </leaf>
   </component>
   <component name="Git.Settings">
@@ -162,12 +144,14 @@
         <option value="$PROJECT_DIR$/bin/deploy.sh" />
         <option value="$PROJECT_DIR$/vdata/runtime.properties" />
         <option value="$PROJECT_DIR$/vdata/developer.properties" />
-        <option value="$PROJECT_DIR$/src/edu/brown/library/vitro/controller/individual/IndividualController.java" />
         <option value="$PROJECT_DIR$/productMods/config/listViewConfig-default.xml" />
         <option value="$PROJECT_DIR$/rdf/tbox/filegraph/hub-ont.ttl" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/productMods/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/productMods/templates/freemarker/body/individual/individual-hidden-class.ftl" />
+        <option value="$PROJECT_DIR$/rdf/display/everytime/searchProhibited.n3" />
+        <option value="$PROJECT_DIR$/src/edu/brown/library/vitro/search/controller/PagedSearchController.java" />
+        <option value="$PROJECT_DIR$/src/edu/brown/library/vitro/controller/individual/IndividualController.java" />
       </list>
     </option>
   </component>
@@ -232,6 +216,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="vitro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vitro-template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vitro-template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vitro" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="individual" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -255,6 +265,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="filegraph" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vitro-template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vitro-template" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rdf" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="display" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="everytime" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -365,6 +397,10 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="FullScreen" value="false" />
+    <property name="LayoutCode.rearrangeEntriesJava" value="false" />
+    <property name="options.lastSelected" value="editor.preferences.appearance" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -556,6 +592,7 @@
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -570,7 +607,6 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -688,17 +724,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/edu/brown/library/vitro/controller/individual/IndividualController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1656">
-          <caret line="86" column="1" selection-start-line="86" selection-start-column="1" selection-end-line="86" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2186#2202#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/productMods/config/listViewConfig-default.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1980">
@@ -752,6 +777,25 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="908">
           <caret line="0" column="27" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/brown/library/vitro/search/controller/PagedSearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="234">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/edu/brown/library/vitro/controller/individual/IndividualController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46203208" vertical-offset="0" max-vertical-offset="1602">
+          <caret line="24" column="71" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2126#2142#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

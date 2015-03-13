@@ -1,0 +1,35 @@
+<http://vivo.school.edu/individual/n7022>
+        a       <http://schema.org/Organization> , <http://vivo.brown.edu/ontology/display#Hidden> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Secret Org"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#modTime>
+                "2015-03-12T20:36:57"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+
+<http://vivo.brown.edu/individual/n2788>
+        a       <http://vivo.brown.edu/ontology/vivo-brown/Article> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Public"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://vivo.school.edu/individual/n4074>
+        a       <http://schema.org/Person> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Bob Smith"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://schema.org/affiliation>
+                <http://vivo.school.edu/individual/n5444> , <http://vivo.school.edu/individual/n7022> .
+
+<http://vivo.school.edu/individual/n7699>
+        a       <http://vivo.brown.edu/ontology/vivo-brown/Article> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Sample Hidden Article"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://vivo.school.edu/individual/n5444>
+        a       <http://schema.org/Organization> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Sample org"^^<http://www.w3.org/2001/XMLSchema#string> .
+
+<http://vivo.brown.edu/individual/n1313>
+        a       <http://vivo.brown.edu/ontology/display#Hidden> , <http://vivo.brown.edu/ontology/vivo-brown/Article> ;
+        <http://www.w3.org/2000/01/rdf-schema#label>
+                "Sample Hidden Article"^^<http://www.w3.org/2001/XMLSchema#string> ;
+        <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#modTime>
+                "2015-03-10T22:31:54"^^<http://www.w3.org/2001/XMLSchema#dateTime> .

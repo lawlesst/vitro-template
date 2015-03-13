@@ -1,0 +1,299 @@
+@prefix schema: <http://schema.org/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+@prefix afn:   <http://jena.hpl.hp.com/ARQ/function#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vitro: <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
+@prefix bdisplay: <http://vivo.brown.edu/ontology/display#> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix blocal: <http://vivo.brown.edu/ontology/vivo-brown/> .
+
+vitro:harvestId  a  owl:AnnotationProperty .
+
+<http://vitro.mannlib.cornell.edu/ns/vitro/public#thumbnailImage>
+        a            owl:ObjectProperty ;
+        rdfs:domain  <http://vitro.mannlib.cornell.edu/ns/vitro/public#File> ;
+        rdfs:range   <http://vitro.mannlib.cornell.edu/ns/vitro/public#File> .
+
+vitro:offerCreateNewOptionAnnot
+        a       owl:AnnotationProperty .
+
+schema:  a                         owl:Ontology ;
+        rdfs:label                 "Schema.org"@en-US ;
+        vitro:ontologyPrefixAnnot  "schema"^^xsd:string ;
+        owl:versionInfo            0.1 .
+
+vitro:hiddenFromPublishBelowRoleLevelAnnot
+        a       owl:AnnotationProperty .
+
+<http://vitro.mannlib.cornell.edu/ns/vitro/public>
+        a                owl:Ontology ;
+        rdfs:label       "Vitro public constructs"^^xsd:string ;
+        owl:versionInfo  0.1 .
+
+vitro:Portal  a  owl:Class .
+
+vitro:objectIndividualSortProperty
+        a       owl:AnnotationProperty .
+
+vitro:mostSpecificType
+        a       owl:AnnotationProperty .
+
+vitro:customShortViewAnnot
+        a       owl:AnnotationProperty .
+
+vitro:forceStubDeletionAnnot
+        a       owl:AnnotationProperty .
+
+vitro:logotypeImage  a  owl:DatatypeProperty .
+
+vitro:extendedLinkedData
+        a       owl:AnnotationProperty .
+
+<http://vitro.mannlib.cornell.edu/ns/vitro/public#directDownloadUrl>
+        a            owl:DatatypeProperty ;
+        rdfs:domain  <http://vitro.mannlib.cornell.edu/ns/vitro/public#FileByteStream> ;
+        rdfs:range   xsd:string .
+
+vitro:displayRankAnnot
+        a       owl:AnnotationProperty .
+
+<http://vitro.mannlib.cornell.edu/ns/vitro/public#attribution>
+        a            owl:DatatypeProperty ;
+        rdfs:domain  <http://vitro.mannlib.cornell.edu/ns/vitro/public#File> ;
+        rdfs:range   xsd:string .
+
+vitro:inPropertyGroupAnnot
+        a       owl:AnnotationProperty .
+
+vitro:displayLimitAnnot
+        a       owl:AnnotationProperty .
+
+vitro:aboutText  a  owl:DatatypeProperty .
+
+vitro:username  a  owl:DatatypeProperty .
+
+vitro:originalId  a  owl:AnnotationProperty .
+
+<http://vitro.mannlib.cornell.edu/ns/vitro/0.7>
+        a                owl:Ontology ;
+        rdfs:label       "Vitro internals"^^xsd:string ;
+        owl:versionInfo  0.7 .
+
+vitro:bannerHeight  a  owl:DatatypeProperty .
+
+<http://vitro.mannlib.cornell.edu/ns/vitro/public#File>
+        a       owl:Class .
+
+<http://vitro.mannlib.cornell.edu/ns/vitro/public#downloadLocation>
+        a            owl:ObjectProperty ;
+        rdfs:domain  <http://vitro.mannlib.cornell.edu/ns/vitro/public#File> ;
+        rdfs:range   <http://vitro.mannlib.cornell.edu/ns/vitro/public#FileByteStream> .
+
+vitro:moniker  a  owl:DatatypeProperty .
+
+vitro:acknowledgeText
+        a       owl:DatatypeProperty .
+
+vitro:prohibitedFromUpdateBelowRoleLevelAnnot
+        a       owl:AnnotationProperty .
+
+vitro:rootTab  a  owl:ObjectProperty .
+
+blocal:Article  a           owl:Class ;
+        rdfs:label          "Article"@en-US ;
+        <http://purl.obolibrary.org/obo/IAO_0000115>
+                "Sample for articles"^^xsd:string ;
+        vitro:hiddenFromDisplayBelowRoleLevelAnnot
+                <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+        vitro:hiddenFromPublishBelowRoleLevelAnnot
+                <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+        vitro:inClassGroup  <http://vivo.brown.edu/individual/vitroClassGroupPublications> ;
+        vitro:prohibitedFromUpdateBelowRoleLevelAnnot
+                <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> .
+
+vitro:customDisplayViewAnnot
+        a       owl:AnnotationProperty .
+
+vitro:logotypeHeight  a  owl:DatatypeProperty .
+
+vitro:isExternalId  a  owl:AnnotationProperty .
+
+vitro:shortDef  a  owl:AnnotationProperty .
+
+vitro:contactMail  a  owl:DatatypeProperty .
+
+vitro:themeDir  a  owl:DatatypeProperty .
+
+<http://vivo.brown.edu/ontology/display>
+        a                          owl:Ontology ;
+        rdfs:label                 "bdisplay"@en-US ;
+        vitro:ontologyPrefixAnnot  "bdisplay"^^xsd:string .
+
+vitro:individualSortDirectionAnnot
+        a       owl:AnnotationProperty .
+
+vitro:urlPrefix  a  owl:DatatypeProperty .
+
+<http://vitro.mannlib.cornell.edu/ns/vitro/public#FileByteStream>
+        a       owl:Class .
+
+vitro:shortHand  a  owl:DatatypeProperty .
+
+vitro:md5password  a  owl:DatatypeProperty .
+
+vitro:fullPropertyNameAnnot
+        a       owl:AnnotationProperty .
+
+vitro:copyrightURL  a  owl:DatatypeProperty .
+
+vitro:rootLogotypeImage
+        a       owl:DatatypeProperty .
+
+vitro:displayLimit  a  owl:DatatypeProperty .
+
+vitro:loginCount  a  owl:DatatypeProperty .
+
+vitro:firstTime  a  owl:DatatypeProperty .
+
+vitro:rootBreadCrumbAnchor
+        a       owl:DatatypeProperty .
+
+vitro:inClassGroup  a  owl:AnnotationProperty .
+
+bdisplay:Hidden  a          owl:Class ;
+        rdfs:label          "Hidden"@en-US ;
+        vitro:hiddenFromDisplayBelowRoleLevelAnnot
+                <http://vitro.mannlib.cornell.edu/ns/vitro/role#curator> ;
+        vitro:hiddenFromPublishBelowRoleLevelAnnot
+                <http://vitro.mannlib.cornell.edu/ns/vitro/role#curator> ;
+        vitro:inClassGroup  <http://vivo.school.edu/individual/vitroClassGroupHiddenIndividuals> ;
+        vitro:prohibitedFromUpdateBelowRoleLevelAnnot
+                <http://vitro.mannlib.cornell.edu/ns/vitro/role#curator> .
+
+<http://vitro.mannlib.cornell.edu/ns/vitro/public#image>
+        a           owl:ObjectProperty ;
+        rdfs:range  <http://vitro.mannlib.cornell.edu/ns/vitro/public#File> .
+
+schema:Organization  a      owl:Class ;
+        rdfs:comment        "An organization such as a school, NGO, corporation, club, etc." ;
+        rdfs:label          "Organization"^^xsd:string , "Organization"@en-US ;
+        rdfs:subClassOf     owl:Thing ;
+        vitro:hiddenFromDisplayBelowRoleLevelAnnot
+                <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+        vitro:hiddenFromPublishBelowRoleLevelAnnot
+                <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+        vitro:inClassGroup  <http://vivo.school.edu/individual/vitroClassGroupOrganizations> ;
+        vitro:prohibitedFromUpdateBelowRoleLevelAnnot
+                <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> .
+
+<http://vitro.mannlib.cornell.edu/ns/vitro/public#filename>
+        a            owl:DatatypeProperty ;
+        rdfs:domain  <http://vitro.mannlib.cornell.edu/ns/vitro/public#File> ;
+        rdfs:range   xsd:string .
+
+vitro:copyrightAnchor
+        a       owl:DatatypeProperty .
+
+vitro:namespaceURI  a  owl:DatatypeProperty .
+
+vitro:Namespace  a  owl:Class .
+
+vitro:oldId  a  owl:AnnotationProperty .
+
+vitro:publicDescriptionAnnot
+        a       owl:AnnotationProperty .
+
+blocal:  a                         owl:Ontology ;
+        rdfs:label                 "blocal"@en-US ;
+        vitro:ontologyPrefixAnnot  "blocal"^^xsd:string .
+
+vitro:ClassGroup  a  owl:Class .
+
+vitro:rootBreadCrumbURL
+        a       owl:DatatypeProperty .
+
+schema:URL  a            owl:Class ;
+        rdfs:comment     "Data type: URL." ;
+        rdfs:label       "URL"^^xsd:string ;
+        rdfs:subClassOf  xsd:string .
+
+vitro:Application  a  owl:Class .
+
+vitro:shortDefAnnot  a  owl:AnnotationProperty .
+
+<http://vitro.mannlib.cornell.edu/ns/vitro/public#mimeType>
+        a            owl:DatatypeProperty ;
+        rdfs:domain  <http://vitro.mannlib.cornell.edu/ns/vitro/public#File> ;
+        rdfs:range   xsd:string .
+
+vitro:hidden  a  owl:DatatypeProperty .
+
+schema:Person  a            owl:Class ;
+        rdfs:comment        "A person (alive, dead, undead, or fictional)." ;
+        rdfs:label          "Person"^^xsd:string , "Person"@en-US ;
+        vitro:hiddenFromDisplayBelowRoleLevelAnnot
+                <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+        vitro:hiddenFromPublishBelowRoleLevelAnnot
+                <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> ;
+        vitro:inClassGroup  <http://vivo.school.edu/individual/vitroClassGroupPeople> ;
+        vitro:prohibitedFromUpdateBelowRoleLevelAnnot
+                <http://vitro.mannlib.cornell.edu/ns/vitro/role#public> .
+
+vitro:displayRank  a  owl:DatatypeProperty .
+
+vitro:modTimeAnnot  a  owl:AnnotationProperty .
+
+vitro:modTime  a  owl:DatatypeProperty .
+
+vitro:bannerImage  a  owl:DatatypeProperty .
+
+vitro:User  a   owl:Class .
+
+vitro:descriptionAnnot
+        a       owl:AnnotationProperty .
+
+vitro:bannerWidth  a  owl:DatatypeProperty .
+
+vitro:imageThumbWidth
+        a       owl:DatatypeProperty .
+
+schema:Place  a          owl:Class ;
+        rdfs:comment     "Entities that have a somewhat fixed, physical extension." ;
+        rdfs:label       "Place"^^xsd:string ;
+        rdfs:subClassOf  owl:Thing .
+
+vitro:customEntryFormAnnot
+        a       owl:AnnotationProperty .
+
+vitro:roleURI  a  owl:DatatypeProperty .
+
+vitro:selectFromExistingAnnot
+        a       owl:AnnotationProperty .
+
+vitro:hiddenAnnot  a  owl:AnnotationProperty .
+
+vitro:PropertyGroup  a  owl:Class .
+
+vitro:exampleAnnot  a  owl:AnnotationProperty .
+
+vitro:isMenuPageIntersectionClass
+        a       owl:AnnotationProperty .
+
+vitro:logotypeWidth  a  owl:DatatypeProperty .
+
+schema:affiliation  a  owl:ObjectProperty ;
+        rdfs:comment  "An organization that this person is affiliated with. For example, a school/university, a club, or a team." ;
+        rdfs:domain   schema:Person ;
+        rdfs:label    "affiliation"^^xsd:string ;
+        rdfs:range    schema:Organization .
+
+<http://vitro.mannlib.cornell.edu/ns/vitro/public#mainImage>
+        a           owl:ObjectProperty ;
+        rdfs:range  <http://vitro.mannlib.cornell.edu/ns/vitro/public#File> .
+
+vitro:oldpassword  a  owl:DatatypeProperty .
+
+vitro:hiddenFromDisplayBelowRoleLevelAnnot
+        a       owl:AnnotationProperty .
