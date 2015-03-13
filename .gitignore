@@ -7,3 +7,5 @@
 /build.properties
 /runtime.properties
 /Vitro
+/vdata
+.env
