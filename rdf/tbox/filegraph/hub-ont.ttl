@@ -5,8 +5,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 #Schema.org
 @prefix schema: <http://schema.org/> .
-#Local
-@prefix bsearch: <http://library.brown.edu/ontology/search#> .
+
 
 #Vitro
 @prefix vitro: <http://vitro.mannlib.cornell.edu/ns/vitro/0.7#> .
@@ -19,11 +18,11 @@
     owl:versionInfo 0.1 ;
 .
 
-<http://library.brown.edu/ontology/search#>
-    a owl:Ontology ;
-        rdfs:label "Brown search"@en-US ;
-        vitro:ontologyPrefixAnnot
-                  "bsearch"^^xsd:string ;
+
+schema:Person
+  rdf:type owl:Class ;
+  rdfs:comment "A person (alive, dead, undead, or fictional)." ;
+  rdfs:label "Person"^^xsd:string ;
 .
 
 schema:Place
@@ -47,17 +46,6 @@ schema:Organization
   rdfs:subClassOf owl:Thing ;
 .
 
-bsearch:Resource
-    rdf:type owl:Class ;
-    rdfs:subClassOf owl:Thing ;
-.
-
-bsearch:BestBet
-    rdf:type owl:Class ;
-    rdfs:label "BestBet"^^xsd:string ;
-    rdfs:subClassOf bsearch:Resource ;
-.
-
 schema:URL
   rdf:type owl:Class ;
   rdfs:comment "Data type: URL." ;
@@ -65,13 +53,6 @@ schema:URL
   rdfs:subClassOf xsd:string ;
 .
 
-bsearch:accessUrl
-  rdf:type owl:DatatypeProperty ;
-  rdfs:comment "The url to access this service." ;
-  rdfs:domain bsearch:Resource ;
-  rdfs:label "access url"^^xsd:string ;
-  rdfs:range xsd:anyURI ;
-.
 
 
 
