@@ -17,6 +17,8 @@ import com.hp.hpl.jena.query.ResultSet;
 import com.hp.hpl.jena.query.Syntax;
 import com.hp.hpl.jena.rdf.model.RDFNode;
 import com.hp.hpl.jena.shared.Lock;
+import edu.cornell.mannlib.vitro.webapp.auth.requestedAction.display.DisplayObjectProperty;
+import edu.cornell.mannlib.vitro.webapp.auth.requestedAction.display.DisplayObjectPropertyStatement;
 import edu.cornell.mannlib.vitro.webapp.auth.requestedAction.propstmt.AddObjectPropertyStatement;
 import edu.cornell.mannlib.vitro.webapp.dao.jena.QueryUtils;
 import edu.cornell.mannlib.vitro.webapp.servlet.setup.JenaDataSourceSetupBase;
@@ -54,14 +56,10 @@ public class HiddenObjectPropertyPolicy implements PolicyIface{
     @Override
     public PolicyDecision isAuthorized(IdentifierBundle whoToAuth,
                                        RequestedAction whatToAuth) {
-        if (!(whatToAuth instanceof AddObjectPropertyStatement)) {
+        if (!(whatToAuth instanceof DisplayObjectPropertyStatement)) {
             return inconclusiveDecision("Not applicable");
         }
-        AbstractPropertyStatementAction action = (AbstractPropertyStatementAction) whatToAuth;
-        String objURI = ((AddObjectPropertyStatement) action).getObjectUri();
-        AddObjectPropertyStatement aops = new AddObjectPropertyStatement(
-                action.getOntModel(), action.getURI(),
-                SOME_PREDICATE, SOME_URI);
+        String objURI = ((DisplayObjectPropertyStatement) whatToAuth).getObjectUri();
         if (relatedToHiddenClass(objURI)) {
             log.debug("Not authorizing object prop view.");
             return unauthorizedDecision("Related to hidden property");
@@ -123,7 +121,7 @@ public class HiddenObjectPropertyPolicy implements PolicyIface{
         public void contextInitialized(ServletContextEvent sce) {
             ServletContext ctx = sce.getServletContext();
 
-            ServletPolicyList.addPolicy(ctx, new HiddenObjectPropertyPolicy(
+            ServletPolicyList.addPolicyAtFront(ctx, new HiddenObjectPropertyPolicy(
                     ctx));
         }
 
