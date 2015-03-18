@@ -20,6 +20,7 @@ import com.hp.hpl.jena.shared.Lock;
 import edu.cornell.mannlib.vitro.webapp.auth.requestedAction.display.DisplayObjectProperty;
 import edu.cornell.mannlib.vitro.webapp.auth.requestedAction.display.DisplayObjectPropertyStatement;
 import edu.cornell.mannlib.vitro.webapp.auth.requestedAction.propstmt.AddObjectPropertyStatement;
+import edu.cornell.mannlib.vitro.webapp.auth.requestedAction.publish.PublishObjectPropertyStatement;
 import edu.cornell.mannlib.vitro.webapp.dao.jena.QueryUtils;
 import edu.cornell.mannlib.vitro.webapp.servlet.setup.JenaDataSourceSetupBase;
 
@@ -56,10 +57,18 @@ public class HiddenObjectPropertyPolicy implements PolicyIface{
     @Override
     public PolicyDecision isAuthorized(IdentifierBundle whoToAuth,
                                        RequestedAction whatToAuth) {
-        if (!(whatToAuth instanceof DisplayObjectPropertyStatement)) {
+        String objURI = null;
+        if (whatToAuth instanceof DisplayObjectPropertyStatement) {
+            objURI = ((DisplayObjectPropertyStatement) whatToAuth).getObjectUri();
+        } else if (whatToAuth instanceof PublishObjectPropertyStatement) {
+            objURI = ((PublishObjectPropertyStatement) whatToAuth).getObjectUri();
+        }
+        else {
             return inconclusiveDecision("Not applicable");
         }
-        String objURI = ((DisplayObjectPropertyStatement) whatToAuth).getObjectUri();
+        if ((objURI == null)) {
+            return inconclusiveDecision("Not applicable");
+        }
         if (relatedToHiddenClass(objURI)) {
             log.debug("Not authorizing object prop view.");
             return unauthorizedDecision("Related to hidden property");
